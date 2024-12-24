@@ -99,17 +99,14 @@ We welcome contributions! Follow these steps:
    ```
 3. **Create a feature branch.**:
    ```bash
-   Copy code
    git checkout -b feature-name
    ```
 4. Commit your changes:
    ```bash
-    Copy code
     git commit -m "Add feature description"
     ```
 5. **Push to the branch.**:
    ```bash
-    Copy code
     git push origin feature-name
     ```
 6. **Open a pull request in the original repository.**
