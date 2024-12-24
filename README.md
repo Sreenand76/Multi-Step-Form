@@ -1,6 +1,6 @@
 # Multi-Step Form with Dark Mode and UI Enhancements
 
-This is a Next.js project that features a sleek multi-step form layout with a dark mode toggle and enhanced UI powered by Tailwind CSS, ShadCN UI, Zustand, and Framer Motion. It also includes mock API integration for form state updates.
+This is a Next.js project that features a sleek multi-step form layout with a dark mode toggle and enhanced UI powered by Tailwind CSS, ShadCN UI, and Framer Motion. It also includes mock API integration for form state updates.
 
 ---
 
@@ -8,7 +8,7 @@ This is a Next.js project that features a sleek multi-step form layout with a da
 
 - Multi-step form with navigation and progress tracking
 - Dark mode toggle with seamless transitions
-- Global state management using Zustand
+- Global state management using Context API
 - Animations and smooth transitions with Framer Motion
 - Mock API integration for form state updates
 - Fully responsive and accessible design
@@ -28,7 +28,6 @@ This is a Next.js project that features a sleek multi-step form layout with a da
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **UI Components**: [ShadCN UI](https://shadcn.dev/)
-- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
 - **Animations**: [Framer Motion](https://www.framer.com/motion/)
 - **Mock API**: JSON Mock API & Next.js API Routes
 
@@ -51,24 +50,23 @@ cd multi-step-form
 ```
 ### Step 2: Install Dependencies
  ```bash
-Copy code
 npm install
 ```
-2. **Configure Tailwind CSS for Dark Mode**:
-   - In your `tailwind.config.js`, configure the `darkMode` strategy to `"class"`:
-     ```js
-     module.exports = {
-       content: [
-         "./pages/**/*.{js,ts,jsx,tsx}",
-         "./components/**/*.{js,ts,jsx,tsx}",
+**Configure Tailwind CSS for Dark Mode**:
+  - In your `tailwind.config.js`, configure the `darkMode` strategy to `"class"`:
+   ```js
+   module.exports = {
+    content: [
+      "./pages/**/*.{js,ts,jsx,tsx}",
+      "./components/**/*.{js,ts,jsx,tsx}",
        ],
-       theme: {
-         extend: {},
+      theme: {
+      extend: {},
        },
-       plugins: [],
-       darkMode: 'class', // Enable dark mode via class strategy
+      plugins: [],
+      darkMode: 'class', // Enable dark mode via class strategy
      };
-
+```
 ## Step 3: 🏃‍♂️ Running the Development Server
 
 Once you have set up the project, run the development server:
