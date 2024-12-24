@@ -71,7 +71,7 @@ export default function MultiStepForm() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
     >
-      <div className="max-w-2xl mx-3 md:mx-auto p-6 bg-white shadow-lg rounded-lg mt-7 md:mt-10 card">
+      <div className="max-w-[750px] mx-3 md:mx-auto p-6 bg-white shadow-lg rounded-lg mt-7 md:mt-10 card">
         <h1 className="text-3xl font-extrabold mb-6 text-center">Multi-Step Form</h1>
 
         <TabsNavigation activeStep={activeStep} handleProgress={(value) => handleProgress(value as Step)}>
