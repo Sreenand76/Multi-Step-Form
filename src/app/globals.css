@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: #ffffff; /* White */
+    --foreground: #090909; /* Very dark gray */
+    --card: #ffffff; /* White */
+    --card-foreground: #393939; /* Very dark gray */
+    --previous-btn:#a5a5a5;
+    --previous-btn-foreground:#ffffff;
+    --next-btn:#3B82F6;
+    --next-btn-foreground:#ececec;
+    --submit-btn:#04ae40;
+    --submit-btn-foreground:#ffffff;
+    --input: #f3f3f3; /* Light gray */    
+    --input-color: #0f0f0f; /* Light gray */ 
+    --input-border:#7e7e7e;
+    --tooltip-background:#f7f7f7;
+    --tooltip-forground:#1c1b1b;   
+  }
+  
+  .dark {
+    --background: #000000; /* Very dark gray */
+    --foreground: #fafafa; /* Light gray */
+    --card: #090909; /* Very dark gray */
+    --card-foreground: #c5c5c5; /* Light gray */
+    --previous-btn:#2b2b2b;
+    --previous-btn-foreground:#b0b0b0;
+    --next-btn:#000c76;
+    --next-btn-foreground:#b0b0b0;
+    --submit-btn:#04712a;
+    --submit-btn-foreground:#e4e4e4;
+    --input: #1b1b1b; /* Light gray */  
+    --input-color: #ffffff; /* Light gray */
+    --input-border:#4c4c4c;
+    --tooltip-background:#2b2b2b;
+    --tooltip-forground:#ffffff;
+  }
+}  
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background-color: var(--card);
+  color: var(--card-foreground);
+}
+
+.button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: 1px solid var(--border);
+}
+
+.previous-btn{
+  background-color: var(--previous-btn);
+  color: var(--previous-btn-foreground);
+  border-radius: 6px;
+}
+.next-btn{
+  background-color: var(--next-btn);
+  color: var(--next-btn-foreground);
+  border-radius: 6px;
+}
+.submit-btn{
+  background-color: var(--submit-btn);
+  color: var(--submit-btn-foreground);
+  border-radius: 6px;
+}
+
+input{
+  background-color: var(--input);
+  color: var(--input-color);
+  border: 1px solid var(--input-border);
+}
+
+.tooltip {
+  position: relative;
+  background-color: var(--tooltip-background);
+  color: var(--tooltip-forground);
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* hide overflow scrollbar */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

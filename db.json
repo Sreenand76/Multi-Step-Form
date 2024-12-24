@@ -1,0 +1,22 @@
+{
+  "formState": {
+    "step1": {
+      "name": "Sreenand S",
+      "email": "sreenand76@gmail.com"
+    },
+    "step2": {
+      "streetAddress": "Punnol",
+      "city": "Kannur,Kerala"
+    },
+    "step3": {
+      "preferences": {
+        "updates": true,
+        "notifications": false,
+        "emails": true
+      }
+    },
+    "step4": {
+      "confirmed": true
+    }
+  }
+}
