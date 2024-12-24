@@ -91,6 +91,7 @@ pnpm dev
 We welcome contributions! Follow these steps:
 
 1. **Fork the repository.**
+ 
 2. **Clone your forked repository:**
    ```bash
    git clone https://github.com/your-username/multi-step-form.git
